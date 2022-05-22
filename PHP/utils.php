@@ -63,3 +63,17 @@ function SQL_Update($conn, $query, $format = false, ...$vars)
     $statement->close();
     return false;
 }
+
+// Showing button's value of products.php page
+// if user has logged in then value of the button will be "Add to Cart"
+// or else then value of the button will be "See More"
+function ShowButtonValue($id_item)
+{
+    if (!isset($_SESSION['username']) || !isset($_SESSION['id'])) {
+        echo "<p><a href='login.php' role='button' class='btn btn-primary btn-block'>See More</a></p>";
+    } else {
+        $id_item = htmlspecialchars($id_item);
+        $sendTo = "PHP/products_add.php?id=$id_item";
+        echo "<p><a href='PHP/products_add.php?id=$id_item' class='btn btn-primary btn-block'>Add to Cart</a></p>";
+    }
+}

@@ -144,3 +144,22 @@ function changingPassword() {
 		}, 10);		
 	});
 }
+
+// addToCart function
+function addToCart(itemID) {
+	request(itemID, '#addToCart', function(data) {
+		document.getElementById('errs').innerHTML = "";
+		var transition = document.getElementById('errrs').style.transition;
+		document.getElementById('errs').style.transition = "none";
+		document.getElementById('errs').style.opacity = 0;
+		switch(data) {
+			case '0':
+				document.getElementById('errs').innerHTML += '<div style="margin: 5px 0; color: green;"><strong>Your new item has been added successfully.</strong></div>';
+				break;
+		}
+		setTimeout(function() {
+			document.getElementById('errs').style.transition = transition;
+			document.getElementById('errs').style.opacity = 1;
+		}, 10);
+	});
+}

@@ -1,8 +1,5 @@
 <?php
 require_once 'PHP/utils.php';
-/* if (!isset($_SESSION['username'])) {
-    header('location: login.php');
-} */
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +27,7 @@ require_once 'PHP/utils.php';
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="PHP/products_add.php" id="1">
+                        <a>
                             <img src="Images/cannon_eos.jpg" alt="Cannon">
                         </a>
                         <center>
@@ -38,13 +35,7 @@ require_once 'PHP/utils.php';
                                 <h3>Cannon EOS</h3>
                                 <p>Price: $36,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(1); ?>
                             </div>
                         </center>
                     </div>
@@ -52,7 +43,7 @@ require_once 'PHP/utils.php';
 
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/sony_dslr.jpeg" alt="Sony DSLR">
                         </a>
                         <center>
@@ -60,13 +51,7 @@ require_once 'PHP/utils.php';
                                 <h3>Sony DSLR</h3>
                                 <p>Price: $40,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(2); ?>
                             </div>
                         </center>
                     </div>
@@ -74,7 +59,7 @@ require_once 'PHP/utils.php';
 
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/sony_dslr2.jpeg" alt="Sony DSLR">
                         </a>
                         <center>
@@ -82,13 +67,7 @@ require_once 'PHP/utils.php';
                                 <h3>Sony DSLR</h3>
                                 <p>Price: $50,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(3); ?>
                             </div>
                         </center>
                     </div>
@@ -96,7 +75,7 @@ require_once 'PHP/utils.php';
 
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/olympus.jpg" alt="Olympus">
                         </a>
                         <center>
@@ -104,13 +83,7 @@ require_once 'PHP/utils.php';
                                 <h3>Olympus DSLR</h3>
                                 <p>Price: $80,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(4); ?>
                             </div>
                         </center>
                     </div>
@@ -119,7 +92,7 @@ require_once 'PHP/utils.php';
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/titan301.jpg" alt="Titan 301">
                         </a>
                         <center>
@@ -127,13 +100,7 @@ require_once 'PHP/utils.php';
                                 <h3>Titan Model #301</h3>
                                 <p>Price: $13,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(5); ?>
                             </div>
                         </center>
                     </div>
@@ -141,7 +108,7 @@ require_once 'PHP/utils.php';
 
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/titan201.jpg" alt="Titan 201">
                         </a>
                         <center>
@@ -149,13 +116,7 @@ require_once 'PHP/utils.php';
                                 <h3>Titan Model #201</h3>
                                 <p>Price: $3,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(6); ?>
                             </div>
                         </center>
                     </div>
@@ -163,7 +124,7 @@ require_once 'PHP/utils.php';
 
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/hmt.JPG" alt="htm milan">
                         </a>
                         <center>
@@ -171,13 +132,7 @@ require_once 'PHP/utils.php';
                                 <h3>HMT Milan</h3>
                                 <p>Price: $8,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(7); ?>
                             </div>
                         </center>
                     </div>
@@ -185,7 +140,7 @@ require_once 'PHP/utils.php';
 
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/favreleuba.jpg" alt="Favre Leuba">
                         </a>
                         <center>
@@ -193,13 +148,7 @@ require_once 'PHP/utils.php';
                                 <h3>Favre Leuba #111</h3>
                                 <p>Price: $18,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(8); ?>
                             </div>
                         </center>
                     </div>
@@ -208,7 +157,7 @@ require_once 'PHP/utils.php';
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/raymond.jpg" alt="Raymond shirt">
                         </a>
                         <center>
@@ -216,20 +165,14 @@ require_once 'PHP/utils.php';
                                 <h3>Raymond</h3>
                                 <p>Price: $1,500.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(9); ?>
                             </div>
                         </center>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/charles.jpg" alt="Charles shirt">
                         </a>
                         <center>
@@ -237,20 +180,14 @@ require_once 'PHP/utils.php';
                                 <h3>Charles</h3>
                                 <p>Price: $1,000.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(10); ?>
                             </div>
                         </center>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/HXR.jpg" alt="HXR">
                         </a>
                         <center>
@@ -258,20 +195,14 @@ require_once 'PHP/utils.php';
                                 <h3>HXR</h3>
                                 <p>Price: $900.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(11); ?>
                             </div>
                         </center>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <a href="#">
+                        <a>
                             <img src="Images/pink.jpg" alt="PINK">
                         </a>
                         <center>
@@ -279,25 +210,22 @@ require_once 'PHP/utils.php';
                                 <h3>PINK</h3>
                                 <p>Price: $1,200.00</p>
 
-                                <?php if (!isset($_SESSION['username'])) { ?>
-                                <p><a href="PHP/products_add.php" role="button" class="btn btn-primary btn-block">See
-                                        More</a></p>
-                                <?php } else { ?>
-                                <p><a href="PHP/products_add.php" class="btn btn-primary btn-block">Add to
-                                        Cart</a></p>
-                                <?php } ?>
+                                <?php ShowButtonValue(12); ?>
                             </div>
                         </center>
                     </div>
                 </div>
             </div>
         </div>
+
         <br><br><br><br><br><br><br><br>
     </div>
 
     <div>
         <?php require_once 'including/footer.html'; ?>
     </div>
+
+    <script src="including/script.js"></script>
 </body>
 
 </html>
